@@ -204,7 +204,7 @@
                                 <rect key="frame" x="103.5" y="770" width="207" height="62"/>
                                 <color key="backgroundColor" red="0.15686274510000001" green="0.38431372549999998" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="اقتراح">
+                                <state key="normal" title="اقتراح اخر">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
