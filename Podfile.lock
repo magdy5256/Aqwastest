@@ -1,0 +1,71 @@
+PODS:
+  - Alamofire (4.9.1)
+  - EVReflection/Alamofire (5.10.1):
+    - Alamofire
+    - EVReflection/Core
+  - EVReflection/Core (5.10.1)
+  - EVReflection/Moya (5.10.1):
+    - EVReflection/Alamofire
+    - Moya
+  - EVReflection/MoyaRxSwift (5.10.1):
+    - EVReflection/Moya
+    - Moya/RxSwift
+  - GoogleMaps (3.8.0):
+    - GoogleMaps/Maps (= 3.8.0)
+  - GoogleMaps/Base (3.8.0)
+  - GoogleMaps/Maps (3.8.0):
+    - GoogleMaps/Base
+  - GooglePlaces (3.8.0):
+    - GoogleMaps/Base (= 3.8.0)
+  - Kingfisher (5.13.4):
+    - Kingfisher/Core (= 5.13.4)
+  - Kingfisher/Core (5.13.4)
+  - Moya (13.0.1):
+    - Moya/Core (= 13.0.1)
+  - Moya/Core (13.0.1):
+    - Alamofire (~> 4.1)
+    - Result (~> 4.1)
+  - Moya/RxSwift (13.0.1):
+    - Moya/Core
+    - RxSwift (~> 4.0)
+  - Result (4.1.0)
+  - RxAlamofire (4.4.1):
+    - RxAlamofire/Core (= 4.4.1)
+  - RxAlamofire/Core (4.4.1):
+    - Alamofire (~> 4.8)
+    - RxSwift (~> 4.5)
+  - RxSwift (4.5.0)
+
+DEPENDENCIES:
+  - EVReflection/MoyaRxSwift
+  - GoogleMaps
+  - GooglePlaces
+  - Kingfisher (~> 5.0)
+  - RxAlamofire
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - EVReflection
+    - GoogleMaps
+    - GooglePlaces
+    - Kingfisher
+    - Moya
+    - Result
+    - RxAlamofire
+    - RxSwift
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  EVReflection: 8124de482178d34ccd56473e16cd95990f9a1113
+  GoogleMaps: 7c8d66d70e4e8c300f43a7219d8fdaad7b325a9a
+  GooglePlaces: d5f70c3e9e427964fdeca1301a665d276ccd8754
+  Kingfisher: d2279a7abece3c7f25a80cd2b7f363ca5cf3f44c
+  Moya: f4a4b80ff2f8a4ffc208dfb31cd91636622fee6e
+  Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
+  RxAlamofire: ed65f451f5a9a59419b0b9e705043dc01410edd9
+  RxSwift: f172070dfd1a93d70a9ab97a5a01166206e1c575
+
+PODFILE CHECKSUM: 42ffebbd192b3582775e7cd8888ac2f7c16b3765
+
+COCOAPODS: 1.8.4
