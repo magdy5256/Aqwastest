@@ -22,7 +22,9 @@ class MapViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.mapView?.isMyLocationEnabled = true
-        getRestrauntdata()
+        if self.myCurrentLocation != nil{
+            getRestrauntdata()}
+        
         self.imageView.isHidden = true
     }
     
@@ -30,8 +32,7 @@ class MapViewController: UIViewController {
     
     func getRestrauntdata(){
         var viewModel: ResturantViewModel?
-        print(myCurrentLocation.latitude)
-        print(myCurrentLocation.longitude)
+       
         self.view.lock()
         viewModel = ResturantViewModel(requestType: "POST", contentType: "application/json", accept: "application/vnd.swipe-v1+json")
         viewModel?.startTheCall(_parameters: [:], urlString:"https://wainnakel.com/api/v1/GenerateFS.php?uid=\(myCurrentLocation.longitude),\(myCurrentLocation.latitude)&get_param=value")
@@ -52,8 +53,10 @@ class MapViewController: UIViewController {
             
             if resturant.image?.count != 0{
                 self.imageView.isHidden = false
+                self.resturantImage.lock()
                 let url = URL(string: resturant.image![0])
                 self.resturantImage.kf.setImage(with: url)
+                self.resturantImage.unlock()
             }else{
                 let alert = UIAlertController(title: "no image", message: "there is no image for this resturant", preferredStyle: UIAlertController.Style.alert)
                 
@@ -96,6 +99,9 @@ class MapViewController: UIViewController {
     @IBAction func newSuggestionBtn(_ sender: Any) {
         mapView.clear()
         self.imageView.isHidden = true
-        getRestrauntdata()
+        if self.myCurrentLocation != nil{
+            getRestrauntdata()
+            
+        }
     }
 }
